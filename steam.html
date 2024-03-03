@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learnSTEAM</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">learnSTEAM</a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="steam.html">About STEAM</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+      </nav>
+      <section id="steam-home">
+        <p style="font-weight: 700; color: #4a98f7; font-size: 24px;">Whats is STEAM?</p>
+        <p class="sh-des">
+            STEAM means, Science Technology Engineering the Art and Mathematics.
+            In our daily life, in all sectors we need people that knows STEAM.
+        </p>
+      </section>
+      <section id="steam-second">
+        <p style="font-weight: 700; color: #4a98f7; font-size: 24px;">What we can do to empower women in STEAM?</p>
+        <p class="ss-des">
+          <strong>1 - Education and Awareness:</strong><br>
+          Encourage and support girls in pursuing STEAM subjects from an early age. <br>
+          Raise awareness about the contributions of women in STEAM fields through educational programs and events.
+          <br><br>
+          <strong>2 - Role Models and Mentorship:</strong><br>
+          Showcase successful women in STEAM as role models to inspire young girls. <br>
+          Establish mentorship programs connecting experienced women in STEAM with those entering the field.
+          <br><br>
+          <strong>3 - Address Gender Bias:</strong><br>
+          Promote awareness and education about unconscious bias in the workplace and academia. <br>
+          Implement policies that ensure fair evaluation and promotion practices.
+          <br><br>
+          <strong>4 - Inclusive Work Environments:</strong><br>
+          Foster inclusive and diverse work environments that value and celebrate differences. <br>
+          Implement flexible work arrangements to accommodate family responsibilities.
+          <br><br>
+          <strong>5 - Networking Opportunities:</strong><br>
+          Create networking events and conferences specifically focused on women in STEAM. <br>
+          Support the formation of women's groups and professional organizations in STEAM fields.
+          <br><br>
+          <strong>6 - Scholarships and Funding:</strong><br>
+          Establish scholarships and funding opportunities specifically for women pursuing STEAM education and careers. <br>
+          Advocate for equal opportunities for research funding and resources.
+          <br><br>
+          <strong>7 - Educational Outreach:</strong><br>
+          Develop outreach programs to schools and communities to generate interest in STEAM among girls. <br>
+          Support initiatives that provide STEAM resources and education to underprivileged communities.
+          <br><br>
+          <strong>8 - Promote Gender Diversity in Leadership:</strong><br>
+          Encourage the inclusion of women in leadership roles within STEAM organizations. <br>
+          Advocate for diversity and inclusion policies at all levels of STEAM institutions.
+          <br><br>
+          <strong>9 - Challenge Stereotypes:</strong><br>
+          Challenge and debunk stereotypes about gender roles in STEAM through media and educational campaigns. <br>
+          Encourage diverse portrayals of scientists and engineers in the media.
+          <br><br>
+          <strong>10 - Support Return-to-Work Programs:</strong><br>
+          Implement programs that support women who have taken career breaks to re-enter the workforce. <br>
+          Provide opportunities for ongoing professional development.
+          <br><br>
+          <strong>11 - Collaboration and Partnerships:</strong><br>
+          Encourage collaboration between industry, academia, and government to address gender disparities in STEAM. <br>
+          Partner with organizations that actively promote gender diversity and inclusion.
+          <br>  <br>
+          <strong>12 - Advocate for Policy Changes:</strong><br>
+          Advocate for policies that promote gender equality in STEAM education and workplaces. <br>
+          Support initiatives that address sySTEAMic barriers to women's participation in STEAM.
+        </p>
+      </section>
+    <script>
+        const nav = document.querySelector(".nav"),
+  navOpenBtn = document.querySelector(".navOpenBtn"),
+  navCloseBtn = document.querySelector(".navCloseBtn");
+
+searchIcon.addEventListener("click", () => {
+  nav.classList.toggle("openSearch");
+  nav.classList.remove("openNav");
+});
+
+navOpenBtn.addEventListener("click", () => {
+  nav.classList.add("openNav");
+  nav.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("openNav");
+});
+    </script>
+</body>
+</html>

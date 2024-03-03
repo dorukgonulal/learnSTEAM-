@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learnSTEAM</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+  <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <a href="#" class="logo">learnSTEAM</a>
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="steam.html">About STEAM</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="statistics.html">Statistics</a></li>
+    </ul>
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+  </nav>
+
+  <div class="stats">
+    <p class="stats-important">Statistics about STEAM</p>
+    <div class="piechart">
+      <p style="font-weight: 700; color: white; margin-left: 10vh; margin-bottom: 5vh;">35%</p>
+    </div> 
+    <p class="piechart-des">2017 - Number of female students</p>
+    <br><br>
+    <img src="https://oliver-dev.s3.amazonaws.com/thumbs/500x500/bae7046a-2e7c-4900-98fd-c01bb96596e0.png" style="width: 35vh; margin-top: 5vh; padding-left: 0px;">
+    <p class="piechart-des">Subject breakdown - Female students </p>
+    <br>
+    <img src="stats.png" style="width: 35vh; margin-top: 5vh; padding-left: 0px;">
+    <p class="piechart-des">Core STEAM subjects - Female and Male students</p>
+    <br><br><br><br><br>
+  </div>
+  <script>
+    const nav = document.querySelector(".nav"),
+navOpenBtn = document.querySelector(".navOpenBtn"),
+navCloseBtn = document.querySelector(".navCloseBtn");
+
+searchIcon.addEventListener("click", () => {
+nav.classList.toggle("openSearch");
+nav.classList.remove("openNav");
+});
+
+navOpenBtn.addEventListener("click", () => {
+nav.classList.add("openNav");
+nav.classList.remove("openSearch");
+searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+nav.classList.remove("openNav");
+});
+</script>
+</body>
+</html>
